@@ -1,0 +1,50 @@
+\ifx\mcitethebibliography\mciteundefinedmacro
+\PackageError{LHCb.bst}{mciteplus.sty has not been loaded}
+{This bibstyle requires the use of the mciteplus package.}\fi
+\providecommand{\href}[2]{#2}
+\begin{mcitethebibliography}{1}
+\mciteSetBstSublistMode{n}
+\mciteSetBstMaxWidthForm{subitem}{\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd{\mcitemaxwidthsubitemform\space}
+{\relax}{\relax}
+
+\bibitem{angB2Kstee}
+R.~Aaij and {etal}, \ifthenelse{\boolean{articletitles}}{\textit{Angular
+  analysis of the ${B}^0 \rightarrow {K}^{*0}e^+e^-$ decay in the low-$q^2$
+  region}, }{}\href{http://dx.doi.org/10.1007/JHEP04(2015)064}{Journal of High
+  Energy Physics \textbf{2015} (2015), no.~4 64}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Fplus}
+S.~Malde {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\textit{First
+  determination of the ${C}\!{P}$ content of ${D}\rightarrow \pi^+ \pi^- \pi^+
+  \pi^-$ and updated determination of the ${C}\!{P}$ contents of
+  ${D}\rightarrow \pi^+ \pi^- \pi^0$ and ${D}\rightarrow {K}^+ {K}^- \pi^0$},
+  }{}\href{http://dx.doi.org/http://dx.doi.org/10.1016/j.physletb.2015.05.043}{Physics
+  Letters B \textbf{747} (2015) 9 -- 17}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{gammafromfplus}
+R.~Aaij and {etal}, \ifthenelse{\boolean{articletitles}}{\textit{Measurement of
+  ${C}\!{P}$ observables in ${B}^{\pm}\rightarrow {D}{K}^{\pm}$ and
+  ${B}^{\pm}\rightarrow {D}\pi^{\pm}$ with two- and four-body ${D}$ decays},
+  }{}\href{http://dx.doi.org/http://dx.doi.org/10.1016/j.physletb.2016.06.022}{Physics
+  Letters B \textbf{760} (2016) 117 -- 131}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{connor}
+C.~Fitzpatrick and V.~V. Gligorov,
+  \ifthenelse{\boolean{articletitles}}{\textit{{Anatomy of an upgrade event in
+  the upgrade era, and implications for the LHCb trigger}}, }{} Tech. Rep.
+  LHCb-PUB-2014-027. CERN-LHCb-PUB-2014-027, CERN, Geneva, May, 2014\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

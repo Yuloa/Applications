@@ -1,0 +1,133 @@
+%% start of file `Lebenslauf_Template.tex'.
+%% Original-Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Changed by gratiswurst.de
+%
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue, sans]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[english,ngerman]{babel}
+\usepackage[ansinew]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{graphicx}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}
+\usepackage[T1]{fontenc}
+\newcommand{\changefont}[3]{\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+
+\usepackage{setspace}
+\usepackage{xcolor}
+\definecolor{cred1}{HTML}{CA0614}
+\definecolor{cred2}{HTML}{FD3232}
+
+\def\BToDK {$B^{\pm} \rightarrow D K^{\pm}\ $}
+\def\B {$B\ $}
+\def\D {$D\ $}
+%\def\Dz {$D^0\ $}
+%\def \Dzbar {$ \kern 0.2em\overline{\kern -0.2em D^0}{} $ }
+\def\g {$\gamma\ $}
+\def\CP {$C\!P \ $}
+
+
+%----------------------------------------------------------------------------------
+%            Kontaktdaten
+%----------------------------------------------------------------------------------
+% VORNAME
+\firstname{Statement of}
+% NACHNAME
+\familyname{Research Interests}
+%FOTO  (optional, ggf. einfach die Zeile löschen!)
+%  64pt = Höhe des Bildes, 'picture' = Name des Bildes
+%\photo[64pt]{Foto1}
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resumer
+\usepackage{lineno}
+\linenumbers
+%----------------------------------------------------------------------------------
+%            Inhalt
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+I am highly interested in performing high-precision measurements in flavour physics, especially in measurements of \CP violating quantities and measurements that have the potential to lead to the discovery of New Physics (NP) beyond the Standard Model (SM). I am also excited about developing, implementing and evaluating new techniques and algorithms that exploit our understanding of the data and the underlying physics and improve the results of our analyses.\\
+\newline
+I already started working on a LHCb analysis during my bachelor's program where I explored the possibility of measuring the CKM angle $\gamma$ using $B_s^0 \to D^0 \phi$ decays at LHCb. \\
+I continued working with LHCb during my master's thesis where I performed an analysis of the rare decay $B_d \rightarrow K^{*0} e^+ e^-$ at low dilepton mass. The description for this decay is theoretically clean and due to its small branching ratio this decay channel is a good place to look for NP \cite{krueger}.
+I applied and tested the performance of different algorithms for the reconstruction of electrons, which is particularly challenging when working with low energy electrons. I then went on to develop and optimise a selection for this rare decay using multi-variate analysis techniques which laid the foundation for an angular analysis of the decay in the search of NP \cite{angB2Kstee}. 
+
+This work inspired me to pursue a Ph.D. on the model-independent measurement of the CKM angle $\gamma$ through $B^{\pm} \rightarrow D(\rightarrow 4\pi) K^{\pm}$ decays with both CLEO-c and LHCb. 
+This measurement requires a two-step analysis with the first step being the determination of the model-independent strong phase information of the $D^0 \rightarrow 4 \pi$ decay and the second step the fitting of the $C\!P$ violating phase $\gamma$ in $B^{\pm} \rightarrow D(\rightarrow 4\pi) K^{\pm}$ decays. I used quantuum-correlated $\psi(3770) \rightarrow DD$ decays collected by the CLEO-c experiment to perform a first time measurement of the $C\!P$ even fraction $F_+$ of the $D^0 \rightarrow 4 \pi$ decay \cite{Fplus}. 
+%This result was already used in a LHCb measurement of $\gamma$ \cite{gammafromfplus}.
+I have also made a significant contribution to the model-independent measurement of the strong phase information of $D^0 \rightarrow 4 \pi$ in different bins of the phase-space.
+This work is also performed on quantuum-correlated $\psi(3770) \rightarrow DD$ decays in CLEO-c data where the signal decay is reconstructed against a number of flavour tags, $C\!P$ tags, and mixed tags whose binned strong phase information is known, such as the $D^0 \rightarrow K_{S,L} \pi^+ \pi^-$ decays.
+
+Currently I am working on the measurement of $\gamma$ using $B^{\pm} \rightarrow D(\rightarrow 4\pi) K^{\pm}$ decays recorded by LHCb in 2016. This analysis will use the strong phase information of the $D$ decay that I have previously determined as input to get a measurement of $\gamma$ that is completely independent of any amplitude model for the $D$ decay. %for different bins of the $D^0 \rightarrow 4\pi$ phase-space.
+This will be the very first measurement of $\gamma$ using a four-body final state for the $D$ meson with a binned phase-space.
+ 
+During my Ph.D. I also worked on MINT, the only software capable of modelling generic n-body Dalitz plots. I implemented the principle of Markov Chain Monte Carlo in a way that allows the extremely fast generation of multi-body decays following an arbitrarily complicated decay amplitude as well as the fist time generation of correlated decays while avoiding the copying of events, a bias usually introduced when using the Markov Chain principle.
+\\
+
+Measuring \g to the highest possible precision is of very great importance.
+The SM is an incredibly successful theory but it does not explain all our observations. It is therefore of critical importance to probe this theory to the highest precision to find spaces where NP could appear. 
+Of the three angles of the CKM unitarity triangle the angle \g is known with the smallest precision. In order to identify sources of NP and to test the three quark model all three angles need to be precisely measured, preferably using different techniques and approaches. 
+At first order the \BToDK decays are mediated by tree-level processes. The value of \g obtained using these analyses can therefore be compared to alternative measurements of \g using decays that involve loop diagrams, and a discrepancy between the measurements will be a strong indication of NP. In the era of high precision physics it is essential to rely on amplitude-model independent methods since modelling the phase information of multi-body decays is associated with a great and hard to estimate systematic uncertainty.
+%In this vain it is also crucial to rely on amplitude-model independent methods 
+\\
+%One of the current three best measurements of \g from single a analysis comes from the above described model-independent method using $K_S \pi^+ \pi^-$ decays as the \D meson final state \cite{gammafromkspipi}. \\
+
+
+This is why I would like to continue my work measuring \g from \BToDK events where the D decays to a hadronic multi-body final state. This analysis will take advantage of the full data sample of Run I and Run II recorded by LHCb. I would also like to explore the possibility of using different four-body final states and combining the results to obtain highest precision to $\gamma$. \\
+\clearpage
+
+
+\\
+
+
+
+%In my analyses I will reconstruct the \D meson in a hadronic 4-body final state accessible to both \Dz and \Dzbar meson decays, such as $\pi^- \pi^+ \pi^- \pi^+$, $K^{\pm} \pi^{\mp} \pi^{\pm} \pi^{\mp} $ and $K^- K^+ \pi^- \pi^+$. \\
+%The CKM angle \g enters the amplitude of the decays through interference of the two decay paths $B^{\pm} \rightarrow D^0(\rightarrow 4h) K^{\pm}$ and $B^{\pm} \rightarrow $\Dzbar$(\rightarrow 4h) K^{\pm}$. 
+%The analyses can be optimised by studying the dependence of this interference on the \D Dalitz plot. This means that the phase-space of the $D \rightarrow 4h$ decay can be divided into bins.
+%The value of \g does not depend on the binning but it can be shown that maximal precision can be achieved when the phase-space is divided by strong-phase difference $\Delta \delta$ of the \D decay. 
+%Model-independent information about the \D decays that enter the full decay amplitude, such as a the amplitude weighted sine and cosine of the strong-phase-difference for different bins, has been obtained by former experiments such as CLEO-c where pairs of correlated \D mesons were created and analysed.\\
+%In my analyses, the angle \g and the other parameters of the \B decay, $r_B$ and $\delta_B$, will be fitted simultaneously for all bins, taking advantage of the fact that the same values for 
+%%\g, $r_B$ and $\delta_B$ 
+%the fitted parameters determine the signal yield in each bin. It is even possible to combine the fits for different final states of the \D meson since the fitted parameters depend only on the \B decays.\\
+%Additionally to analysing the signal decays, this technique relies on information from flavour tagged \D decays which can be obtained from semileptonic $B^{0}$ decays such as $B^0 \rightarrow D^{*\pm} \mu^{\mp}\nu$. These decays can also be used as a data-driven method to gather information about the variation of the reconstruction and selection efficiencies of the \D decays over the five-dimensional Dalitz plot.\\
+
+
+
+sophisticated method that needs
+detailed understanding
+intrictae undertanding of dalitz plot efficiencyes, variations over the dalitz plots
+\\
+\\
+exceptionally qualified
+ and has the potential to provide the best \g measurement made by a single analysis.
+\\
+
+
+
+Model-independent analysis of \BToDK decays where the \D meson decays to a multi-body final state are a sophisticated and very promising way to achieve the potentially most precise measurement of \g .\\
+
+
+
+
+%\clearpage
+\bibliographystyle{unsrt}
+\bibliography{vorlage}
+%\addcontentsline{toc}{chapter}{\bibname}
+
+\end{document}
+
+
+%% end of file `Lebenslauf_Template.tex'.

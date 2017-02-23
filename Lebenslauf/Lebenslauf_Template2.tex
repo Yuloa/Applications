@@ -1,0 +1,367 @@
+%% start of file `Lebenslauf_Template.tex'.
+%% Original-Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Changed by gratiswurst.de
+%
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue, sans]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[english,ngerman]{babel}
+\usepackage[ansinew]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8, margin=0.85in]{geometry}
+\usepackage{graphicx}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}
+\usepackage[T1]{fontenc}
+\newcommand{\changefont}[3]{\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+
+\usepackage{setspace}
+\usepackage{xcolor}
+\definecolor{cred1}{HTML}{CA0614}
+\definecolor{cred2}{HTML}{FD3232}
+
+
+%----------------------------------------------------------------------------------
+%            Kontaktdaten
+%----------------------------------------------------------------------------------
+% VORNAME
+\firstname{Claire}
+% NACHNAME
+\familyname{Prouve}
+%FOTO  (optional, ggf. einfach die Zeile löschen!)
+%  64pt = Höhe des Bildes, 'picture' = Name des Bildes
+%\photo[64pt]{Foto1}
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resumer
+
+%----------------------------------------------------------------------------------
+%            Inhalt
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+
+{\color{cred1} \noindent\rule[3pt]{3.5cm}{2pt} \Large Personal Data}\\
+\\
+\begin{tabular}{p{3.3cm} p{6cm} p{4cm} l}
+ \textbf{Address:} & \quad CERN - Office 13/1-044 & \textbf{Tel. private:} & +41 754117909 \\
+ & \quad CH-1211 Geneva 23 & \textbf{E-Mail:} & Claire.Prouve@cern.ch \\
+ & \quad Switzerland & &\\
+ \textbf{Date of birth:} & \quad 16 March 1987 & \textbf{Nationality:} & German, French \\
+\end{tabular}
+\\
+\newline
+
+
+{\color{cred2} \noindent\rule[3pt]{3.5cm}{2pt} \Large Education}\\
+\\
+\begin{tabular}{p{3.3cm} l}
+09/2013 - present &{\changefont{pnc}{m}{sc}Ph.D. in Experimental Particle physics} \\
+ & \qquad University of Bristol\\
+ 04/2012 - 06/2013 &{\changefont{pnc}{m}{sc}M.Sc. with specialisation in Experimental Particle physics} \\
+ & \qquad RWTH Aachen University  \quad  (grade \textit{very good})\\
+  09/2010 - 08/2011 &{\changefont{pnc}{m}{sc}ERASMUS exchange programme} \\
+ & \qquad Université Paris Sud, participation in the second year master's programme \\
+ & \qquad NPAC (Nuclear physics, Particle physics, Astronomy and Cosmology) \\
+ 10/2006 - 04/2012 & {\changefont{pnc}{m}{sc}B.Sc.in Physics with Computer Science as subsidiary subject} \\
+     & \qquad RWTH Aachen University  \\
+ 09/1997 - 08/2006 &  {\changefont{pnc}{m}{sc}Abitur with specialisation in mathematics and physics}\\
+	     & \qquad Gymnasium Horkesgath \\
+
+\end{tabular}
+\\
+\newline
+
+
+{\color{cred1} \noindent\rule[3pt]{3.5cm}{2pt} \Large Awards and prizes}\\
+\\
+\begin{tabular}{p{3.3cm} l}
+15/09/2016 & {\changefont{pnc}{m}{sc}LHCb Early-Career Scientist Award}\\
+& \qquad Awarded for the development of the automated alignment of the RICH mirror \\
+& \qquad system within the online data taking framework of LHCb. This was a \\
+%This reduced  \\
+%& \qquad the time the RICH mirror alignment needed to complete from several days \\
+%& \qquad to 20 minutes and allows to run the alignment every fill instead of once per\\
+%& \qquad year. 
+& \qquad significant contribution to the novel real-time alignment procedures at LHCb \\
+& \qquad for Run II and to the understanding of the LHCb RICH detectors. \\
+
+19/08/2006 & {\changefont{pnc}{m}{sc}Deutsche Physikalische Gesellschaft Abiturpreis} (book prize) \\ 
+& \qquad German physics society prize for pupils with exceptional achievements in \\
+& \qquad physics.\\
+\end{tabular}
+\\
+\newline
+
+
+{\color{cred2} \noindent\rule[3pt]{3.5cm}{2pt} \Large Research Projects}\\
+\\
+\begin{tabular}{p{3.3cm} l}
+ 09/2013 - present & {\changefont{pnc}{m}{sc}Measurement of the $C\!P$ even fraction of $D^0\rightarrow\pi^+\pi^-\pi^+\pi^-$ decays}\\
+ & {\changefont{pnc}{m}{sc}at CLEO-c and a determination of observables related to CP}\\
+ & {\changefont{pnc}{m}{sc} violation in $B^{\pm} \rightarrow DK^{\pm}$ decays at LHCb}\\
+ & \qquad \textit{Ph.D. thesis} \\
+ & \qquad with Dr. J. Rademacker at the University of Bristol  \\
+  
+ 06/2012 - 06/2013 & {\changefont{pnc}{m}{sc}Analysis of the $B_d \rightarrow K^{*0} e^+ e^-$ decay at LHCb}\\
+ & \qquad \textit{Master's thesis}\\
+ & \qquad with Dr. M.H. Schune at the Laboratoire de l'Accelérateur Linéaire, Paris \\
+
+ 05/2011 - 07/2011 & {\changefont{pnc}{m}{sc}Study on the measurement of the CKM angle $\gamma$ at LHCb using}\\
+ & {\changefont{pnc}{m}{sc}untagged $B_s \rightarrow D^0 \phi$ events}\\
+ & \qquad \textit{Internship - beyond the standard curriculum} \\
+ & \qquad with Dr. M.H. Schune at the Laboratoire de l'Accelérateur Linéaire, Paris \\
+ 
+\end{tabular}
+
+\begin{tabular}{p{3.3cm} l} 
+ 
+ 07/2011 - 09/2011 & {\changefont{pnc}{m}{sc}Parametrisation of rigid body dynamics in quaternions}\\
+ & \qquad \textit{Bachelor's thesis} \\ 
+ & \qquad with Prof. R. Schmitz at the Institute for theoretical solid state\\
+ & \qquad physics (Theory C), RWTH Aachen\\
+ 
+ 
+ 04/2008 - 08/2008 & {\changefont{pnc}{m}{sc}Hardware close programming and calibration of a Charge to }\\
+ & {\changefont{pnc}{m}{sc}Digital Converter (QDC)}\\
+ & \qquad \textit{Undergraduate project - beyond the standard curriculum}\\
+ & \qquad with Prof. A. Stahl at the III. Physics Institute B, RWTH Aachen\\
+
+\end{tabular}
+\\
+\newline
+
+{\color{cred1} \noindent\rule[3pt]{3.5cm}{2pt} \Large Tasks in the LHCb collaboration}\\
+\\
+\begin{tabular}{p{3.3cm} l}
+05/2015 - present & {\changefont{pnc}{m}{sc}RICH mirror alignment expert} \\
+& \qquad Expert on call for the real-time alignment of the RICH mirrors. Training of \\
+& \qquad collaboration members. \\
+05/2015 - 09/2016 & {\changefont{pnc}{m}{sc}RICH mirror alignment developer}\\
+& \qquad Leading the development and implementation of the real-time alignment  \\
+& \qquad software for the RICH mirrors. \\
+%This work was recognized by the collaboration\\
+%& \qquad with the \textit{LHCb Early-Career Scientist Award}.\\
+09/2013 - 04/2015 & {\changefont{pnc}{m}{sc}MINT software developer}\\
+& \qquad Developer for the only software capable of modelling a generic n-body \\
+& \qquad decay phase space, which is a critical component of the LHCb physics  \\
+& \qquad simulation software.\\
+
+\end{tabular}
+\\ 
+\newline
+
+{\color{cred2} \noindent\rule[3pt]{3.5cm}{2pt} \Large Primary Publications}\\
+\\
+\begin{tabular}{p{3.3cm} l}
+forthcoming & {\changefont{pnc}{m}{sc}Model-independent determination of the strong-phase}\\
+publication & {\changefont{pnc}{m}{sc}difference between $D^0$ and $\kern 0.2em\overline{\kern -0.2em D^0}{}$ $\to \pi^+\pi^-\pi^+\pi^-$} \\
+& \qquad S. Harnew, C. Prouve, J. Rademacker \textit{to be submitted to Physical Review D}\\
+forthcoming & {\changefont{pnc}{m}{sc}Amplitude analysis of $D^0 \to \pi^+\pi^-\pi^+\pi^-$ and $D^0 \to K^+K^-\pi^+\pi^-$}\\
+publication & {\changefont{pnc}{m}{sc}decays using CLEO-c data}\\
+ & \qquad \href{https://arxiv.org/abs/1611.09253}{P. d'Argent, \textit{et al.} \textit{to be submitted to Physical Review D}} \\
+07/2015 & {\changefont{pnc}{m}{sc}First determination of the $C\!P$ content of $D \to \pi^+\pi^-\pi^+\pi^-$ and}\\
+& {\changefont{pnc}{m}{sc}updated determination of the $C\!P$ contents of  $D \to \pi^+\pi^-\pi^0$} \\
+& {\changefont{pnc}{m}{sc}and  $D \to K^+K^-\pi^0$ } \\
+& \qquad \href{http://www.sciencedirect.com/science/article/pii/S0370269315003809}{S. Malde, \textit{et al.} \textit{Phys. Lett. B}, Vol. 747, 01.07.2015, p. 9-17} \\
+04/2015 & {\changefont{pnc}{m}{sc}Angular analysis of the $B^0 \rightarrow K^{*0}e^+e^{-} $ decay in the low-$q^2$ region} \\
+& \qquad \href{http://link.springer.com/article/10.1007/JHEP04(2015)064}{Aaij, R., \textit{et al.} \textit{J. High Energ. Phys.} (2015) 2015: 64. } \\
+05/2013 & {\changefont{pnc}{m}{sc}Measurement of the $B^0 \rightarrow K^{*0}e^+e^-$ branching fraction at}\\
+& {\changefont{pnc}{m}{sc}low dilepton mass}\\
+& \qquad \href{http://link.springer.com/article/10.1007/JHEP05(2013)159}{Aaij, R., \textit{et al.} \textit{J. High Energ. Phys.} (2013) 2013: 159.} \\
+\end{tabular}
+\\
+\newline
+
+
+
+{\color{cred1} \noindent\rule[3pt]{3.5cm}{2pt} \Large Posters and Presentations}\\
+\\
+\begin{tabular}{p{3.3cm} l}
+22/02/2017 & {\changefont{pnc}{m}{sc}Expanding model independent approaches for measuring}\\
+& {\changefont{pnc}{m}{sc}the CKM angle $\gamma$}\\
+& \qquad Poster at the LHCC \\
+14/09/2016 & {\changefont{pnc}{m}{sc}Status of the real-time alignment and calibration activities} \\
+& \qquad Plenary talk at the LHCb Week in Santiago de Compostela \\
+02/03/2016 & {\changefont{pnc}{m}{sc}Novel Real-time Calibration and Alignment Procedure}\\
+&  {\changefont{pnc}{m}{sc}for LHCb Run II} \\
+& \qquad Poster at the LHCC \\
+14/11/2013 & {\changefont{pnc}{m}{sc}Towards a model-independent measurement of $\gamma$ through} \\
+& {\changefont{pnc}{m}{sc}$B^{\pm} \rightarrow D(\rightarrow 4 \pi)K^{\pm}$ decays with LHCb and CLEO-c} \\
+& \qquad Poster at the UK High Energy Physics Forum \\
+
+\end{tabular}
+
+\begin{tabular}{p{3.3cm} l}
+
+04/04/2013 & {\changefont{pnc}{m}{sc}Photon polarisation in $b\rightarrow s\gamma$ using $B_d \rightarrow K^{*}e^+e^-$ at LHCb} \\
+& \qquad Poster at the LHC France 2013 conference\\
+
+05/03/2013 & {\changefont{pnc}{m}{sc}Analysis of the rare decay $B_d \rightarrow K^{*}e^+e^-$ at LHCb} \\
+& \qquad Talk at the 77. Jahrestagung der DPG und DPG-Frühjahrstagung\\
+\end{tabular}
+\\
+\newline
+
+
+{\color{cred2} \noindent\rule[3pt]{3.5cm}{2pt} \Large Additional Training}\\
+\\
+\begin{tabular}{p{3.3cm} l}
+27-30/06/2015 & {\changefont{pnc}{m}{sc}LHCb workshop on multi-body decays of B and D mesons} \\
+& \qquad LHCb workshop with invited theorists focussing on the amplitude analysis \\
+& \qquad techniques for three- and four-body decays of heavy mesons.\\
+ 10/2011 - 09/2012 & {\changefont{pnc}{m}{sc}TANDEM Mentoring Programm, RWTH Aachen}\\
+ & \qquad Selected for participation in the mentoring programme for talented female\\
+ & \qquad students and Ph.D. students. Participation in several trainings aiming\\
+ & \qquad at enlarging professional competences and developing key qualifications. \\
+ & \qquad  Dr. Tatsuya Nakada as a personal mentor.\\
+  7-14/07/2011 & {\changefont{pnc}{m}{sc}Trans-European School of High Energy Physics}\\
+  
+18-19/11/2008 & {\changefont{pnc}{m}{sc}Training for Roberta\textsuperscript{\textregistered} workshop -leaders}\\
+ & \qquad Acquirement of certificate qualifying me to conduct Roberta\textsuperscript{\textregistered} workshops and \\
+ & \qquad trainings Europe-wide.\\
+\end{tabular}
+\\
+\newline
+
+{\color{cred1} \noindent\rule[3pt]{3.5cm}{2pt} \Large Teaching Experience}\\
+\\
+\begin{tabular}{p{3.3cm} l} 
+02/2014 - 05/2014 & {\changefont{pnc}{m}{sc}Third year computing course in C}\\ 
+& \qquad Tutor, School of Physics, University of Bristol\\
+09/2013 - 12/2013 & {\changefont{pnc}{m}{sc}Nuclear and particle physics}\\
+& \qquad Teaching assistant, School of Physics, University of Bristol\\
+ 10/2011 - 03/2012 & {\changefont{pnc}{m}{sc}Programming for everybody - an introduction into JAVA}\\ 
+ & \qquad Tutor, 9. Institute for Computer Science, RWTH Aachen\\
+ 07/2009 - 09/2009 & {\changefont{pnc}{m}{sc}Practical course in physics}\\
+& \qquad Laboratory demonstrator, I. Physics Institute B, RWTH Aachen \\
+ 10/2008 - 03/2009 & {\changefont{pnc}{m}{sc}Theoretical Electrodynamics}\\
+ & \qquad Tutor, Institute for theoretical solid state physics (Theory C), RWTH Aachen \\
+ 04/2008 - 09/2008 & {\changefont{pnc}{m}{sc}Practical course in physics for students with physics}\\
+ & {\changefont{pnc}{m}{sc}as subsidiary subject}\\
+& \qquad Tutor, I. Physics Institute A, RWTH Aachen\\
+ 10/2007 - 03/2008 & {\changefont{pnc}{m}{sc}Programming for everybody - an introduction into JAVA}\\
+& \qquad Tutor, 9. Institute for Computer Science, RWTH Aachen\\
+\end{tabular}
+\\
+\newline
+
+{\color{cred2} \noindent\rule[3pt]{3.5cm}{2pt} \Large Community Outreach}\\
+\\
+\begin{tabular}{p{3.3cm} l}
+2014 - 2015 &  {\changefont{pnc}{m}{sc}Bristol Bright Night} \\
+& \qquad Organisation and execution of interactive and hands-on showcasing of cutting\\
+& \qquad edge research for over 1000 people.\\
+2013 - 2015 & {\changefont{pnc}{m}{sc}Particle Physics Masterclass}\\
+ & \qquad Organisation and execution of several masterclasses in particle physics of the \\
+ & \qquad University of Bristol for high-school and A-level students.\\
+ 2008 - 2013 &  {\changefont{pnc}{m}{sc}Workshop leader for Roberta\textsuperscript{\textregistered} courses}\\
+ & \qquad Planning, organisation and execution of workshops to instil young girls into\\
+ & \qquad the handling of modern technologies, awake interest in innovative develop-\\
+ & \qquad ments in computer science and provide confidence in their technical skills.\\
+\end{tabular}  
+  
+\begin{tabular}{p{3.3cm} l}
+ 2-4/12/2011 & {\changefont{pnc}{m}{sc}MINT 400 in Berlin}\\
+  & \qquad Organisation and realisation of the 5th MINT (Mathematics, Informatics, \\
+  & \qquad Natural science, Technology) event, amongst others as exhibition supervisor \\
+  & \qquad and workshop leader. The MINT event is a three day seminar for 400 pupils\\
+  & \qquad from 147 schools to gain close insight into the MINT working fields and to \\
+  &\qquad illustrate the importance of the MINT subjects for our society. \\
+ 2010/ 2011 & {\changefont{pnc}{m}{sc}Girlsday RWTH Aachen}\\
+  & \qquad Organisation and realisation of the annual RWTH Aachen Girlsday.\\
+\end{tabular}
+\\
+\newline
+
+{\color{cred1} \noindent\rule[3pt]{3.5cm}{2pt} \Large Skills}\\
+\\
+\begin{tabular}{p{3.3cm} l}
+ \textbf{Language skills} & \quad Fluent in German, English and French \\
+ \textbf{Computing skills} & \quad C++, ROOT, RooFit, python, MINT, JAVA, Geant4 and LHCb software\\
+\end{tabular}
+\clearpage
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\color{cred1} \noindent\rule[3pt]{3.5cm}{2pt} \Large Research Projects}\\
+\\
+\begin{tabular}{p{3.3cm} l}
+ 09/2013 - present & {\changefont{pnc}{m}{sc}XXX}\\
+ & {\changefont{pnc}{m}{sc}Proper title}\\
+ & \qquad \textit{Ph.D. thesis} \\
+ & \qquad with Dr. J. Rademacker at the University of Bristol  \\
+ & \qquad Measurement of the fractional $C\!P$-even content $F_+^{4\pi}$ of the self-conjugate\\
+ & \qquad decay $D^0 \rightarrow \pi^+\pi^-\pi^+\pi^-$ using Quantum-correlated $\psi(3770)\rightarrow DD$ decays\\
+ & \qquad collected by the CLEO-c experiment. The  $D \rightarrow K_S \pi^+\pi^-$ and $D \rightarrow K_L \pi^+\pi^-$\\
+ & \qquad decays were used to tag the signal mode and their binned strong-phase \\
+ & \qquad difference used to determine $F_+^{4\pi}$.\\
+ & \qquad Ongoing model-independent measurement of the CKM angle $\gamma$ at LHCb\\
+ & \qquad using $B^{\pm} \rightarrow D(\rightarrow \pi^+\pi^-\pi^+\pi^-)K^{\pm}$ decays. The $\gamma$ angle is fitted for different\\
+& \qquad  bins in the $ D\rightarrow \pi^+\pi^-\pi^+\pi^-$ phase-space simultaneously. \\
+ & \qquad Implementation of the RICH alignment into the real-time alignment framework\\
+ & \qquad of LHCb for Run II.\\  
+ & \\
+ 
+ 06/2012 - 06/2013 & {\changefont{pnc}{m}{sc}Analysis of the $B_d \rightarrow K^{*0} e^+ e^-$ decay at LHCb}\\
+ & \qquad \textit{Master's thesis}\\
+ & \qquad with Dr. M.H. Schune at the Laboratoire de l'Accelérateur Linéaire, Paris \\
+ & \qquad Analysis of the $B_d \rightarrow K^{*0} e^+ e^-$ decay channel which is particularly sensitive\\
+ & \qquad to effects of physics "Beyond the Standard Model" \ by measuring the \\
+ & \qquad polarisation of the virtual photon. Evaluating the reconstruction of the \\
+ & \qquad soft final state electrons, and optimisation of signal selection procedure using \\
+ & \qquad e.g. multivariate analysis tools and determination of signal yields in the \\
+ & \qquad 2011 and 2012 LHCb data.\\
+ & \\
+
+ 05/2011 - 07/2011 & {\changefont{pnc}{m}{sc}Study on the measurement of the CKM angle $\gamma$ at LHCb using}\\
+ & {\changefont{pnc}{m}{sc}untagged $B_s \rightarrow D^0 \phi$ events}\\
+ & \qquad \textit{Internship} \\
+ & \qquad with Dr. M.H. Schune at the Laboratoire de l'Accelérateur Linéaire, Paris \\
+ & \qquad Optimisation of the selection procedure for the $B_s \rightarrow D^0 \phi$ decay using both \\
+ & \qquad simulation and data. Selection applied to 135 $pb^{-1}$ 2010/ 2011 data \\
+ & \qquad collected by LHCb. No evidence of a signal could be found with this \\
+ & \qquad level of statistics. \\
+ & \\
+ 
+ 07/2011 - 09/2011 & {\changefont{pnc}{m}{sc}Parametrisation of rigid body dynamics in quaternions}\\
+ & \qquad \textit{Bachelor's thesis} \\ 
+ & \qquad with Prof. R. Schmitz at the Institute for theoretical solid state\\
+ & \qquad physics (Theory C), RWTH Aachen\\
+ & \qquad Study using abstract algebra, quaternion mathematics and rigid body \\
+ & \qquad dynamics to evaluate a novel parametrisation of the equations of motion\\
+ & \qquad of a rigid body. Deriving the kinematic quantities using quaternions and\\
+ & \qquad expressing the Euler equations of rigid body dynamics in quaternion form.\\
+ & \\
+ 
+ 04/2008 - 08/2008 & {\changefont{pnc}{m}{sc}Hardware close programming and calibration of a Charge to }\\
+ & {\changefont{pnc}{m}{sc}Digital Converter (QDC)}\\
+ & \qquad \textit{Undergraduate project - beyond the standard curriculum}\\
+ & \qquad with Prof. A. Stahl at the III. Physics Institute B, RWTH Aachen\\
+ & \qquad Selected for participation in the radiation therapy research project\\
+ & \qquad of the III. Physics Institute B.\\
+\end{tabular}
+
+\end{document}
+
+
+%% end of file `Lebenslauf_Template.tex'.

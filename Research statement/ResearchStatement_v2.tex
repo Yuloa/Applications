@@ -1,0 +1,132 @@
+%% start of file `Lebenslauf_Template.tex'.
+%% Original-Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Changed by gratiswurst.de
+%
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+\PassOptionsToPackage{pdfpagelabels=false}{hyperref} 
+%\documentclass[11pt,a4paper]{moderncv}
+\documentclass[11pt,a4paper,sans]{article}
+% moderncv themes
+%\moderncvtheme[blue, sans]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[english]{babel}
+\usepackage[ansinew]{inputenc}                   % replace by the encoding you are using
+\usepackage{amsmath}
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}%, margin=0.85in]{geometry}
+\usepackage{graphicx}
+
+\usepackage{mciteplus}
+\usepackage[numbers]{natbib}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+
+\usepackage{mciteplus}
+%\newboolean{inbibliography}
+%\setboolean{inbibliography}{false} %True once you enter the bibliography
+
+%\AtBeginDocument{\recomputelengths}
+\usepackage[T1]{fontenc}
+\newcommand{\changefont}[3]{\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+
+\usepackage{setspace}
+\usepackage{xcolor}
+\definecolor{cred1}{HTML}{CA0614}
+\definecolor{cred2}{HTML}{FD3232}
+
+\pagenumbering{gobble}
+
+
+%\input{lhcb-symbols-def}
+\def\BToDK {$B^{\pm} \rightarrow D K^{\pm}\ $}
+\def\B {$B\ $}
+\def\D {$D\ $}
+\def\Dz {$D^0\ $}
+\def \Dzbar {$ \kern 0.2em\overline{\kern -0.2em D^0}{} $ }
+\def\g {$\gamma\ $}
+\def\CP {$C\!P \ $}
+\def \ubar {$ \kern 0.2em\overline{\kern -0.2em u}{} $ }
+\def \cbar {$ \kern 0.2em\overline{\kern -0.2em c}{} $ }
+
+
+%----------------------------------------------------------------------------------
+%            Kontaktdaten
+%----------------------------------------------------------------------------------
+% VORNAME
+%\firstname{Statement of}
+% NACHNAME
+%\familyname{Research Interests}
+%FOTO  (optional, ggf. einfach die Zeile löschen!)
+%  64pt = Höhe des Bildes, 'picture' = Name des Bildes
+%\photo[64pt]{Foto1}
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resumer
+\usepackage{lineno}
+\linenumbers
+%----------------------------------------------------------------------------------
+%            Inhalt
+%----------------------------------------------------------------------------------
+\begin{document}
+%\maketitle
+
+{\fontfamily{lmss}\selectfont
+
+\begin{flushright}
+{\Huge Research Statement}
+\end{flushright}
+
+
+
+I am highly interested in performing high-precision measurements in flavour physics, especially measurements of \CP violating quantities and measurements that have the potential to lead to the discovery of physics beyond the Standard Model (SM). I am also excited about developing, implementing and evaluating new techniques and algorithms that exploit our understanding of the data and the underlying physics and improve the results of our analyses.\\
+\newline
+I already started working on a LHCb analysis during my bachelor's program where I explored the possibility of measuring the CKM angle $\gamma$ using $B_s^0 \to D^0 \phi$ decays at LHCb. \\
+I continued working with LHCb during my master's thesis where I performed an analysis of the rare decay $B_d \rightarrow K^{*0} e^+ e^-$ at low dilepton mass. 
+I applied and tested the performance of different algorithms for the reconstruction of electrons and then developed and optimised a selection for this rare decay using multi-variate analysis techniques which laid the foundation for the angular analysis of the decay in the search for physics beyond the SM\cite{angB2Kstee}. 
+
+This work inspired me to pursue a Ph.D. on the topic of model-independent measurement of the CKM angle $\gamma$ through $B^{\pm} \rightarrow D(\rightarrow 4\pi) K^{\pm}$ decays with both CLEO-c and LHCb. This analysis gains sensitivity to \g by observing the interference-pattern between the $b \rightarrow c $\ubar$\mkern-6mu s$ and the $b \rightarrow u $\cbar$\mkern-5mu s$ transitions over the five-dimensional phase-space of the $D$ meson decay.
+The first part of this analysis is therefore the determination of the model-independent strong-phase variation of the $D^0 \rightarrow 4 \pi$ decay over bins of the phase-space while  the second part the fitting of the $C\!P$ violating phase $\gamma$ in $B^{\pm} \rightarrow D(\rightarrow 4\pi) K^{\pm}$ decays.
+
+I used quantum-correlated $\psi(3770) \rightarrow$ \Dz\Dzbar decays collected by the CLEO-c experiment to perform the first time measurement of the $C\!P$ even fraction $F_+$ of the $D^0 \rightarrow 4 \pi$ decay \cite{Fplus}. This result has already been used in a LHCb measurement of $\gamma$ \cite{gammafromfplus}.
+I have also made a significant contribution to the model-independent measurement of the strong-phase variation of $D^0 \rightarrow 4 \pi$ in different bins of the phase-space.
+%This work is also performed on quantuum-correlated $\psi(3770) \rightarrow DD$ decays in CLEO-c data where the signal decay is reconstructed against a number of flavour tags, $C\!P$ tags, and mixed tags whose binned strong phase information is known, such as the $D^0 \rightarrow K_{S,L} \pi^+ \pi^-$ decays.
+
+Currently I am working on the measurement of $\gamma$ using $B^{\pm} \rightarrow D(\rightarrow 4\pi) K^{\pm}$ decays recorded by LHCb in 2016. This analysis will use the strong-phase variation of the $D$ decay that I have previously determined as input to get a measurement of $\gamma$ that is completely independent of any amplitude-model for the $D$ decay.
+This will be the very first measurement of $\gamma$ using a four-body final state for the $D$ meson with a binned phase-space.
+ 
+During my Ph.D. I also worked on MINT, the only software capable of modelling generic n-body Dalitz plots. I implemented the principle of Markov Chain Monte Carlo in a way that allows the extremely fast generation of multi-body decays following an arbitrarily complicated decay amplitude as well as the fist time generation of correlated decays while avoiding the duplication of events, a bias usually introduced when using the Markov Chain principle.
+\\
+Measuring \g to the highest possible precision is of very great importance.
+The SM is an incredibly successful theory but it does not explain all our observations. It is therefore of critical importance to probe this theory to the highest precision to find spaces where NP could appear. 
+Of the three angles of the CKM unitarity triangle the angle \g is known with the smallest precision. In order to identify sources of NP and to test the three quark model all three angles need to be precisely measured, preferably using different techniques and approaches. 
+At first order the \BToDK decays are mediated by tree-level processes. The value of \g obtained using these analyses can therefore be compared to alternative measurements of \g using decays that involve loop diagrams, and a discrepancy between the measurements will be a strong indication of NP. In the era of high precision physics it is essential to rely on amplitude-model independent methods in order to avoid the great systematic uncertainties associated with modelling phase information of multi-body decays.
+\\
+%One of the current three best measurements of \g from single a analysis comes from the above described model-independent method using $K_S \pi^+ \pi^-$ decays as the \D meson final state \cite{gammafromkspipi}. \\
+This is why I would like to continue my work measuring \g from \BToDK events where the $D$ meson decays to a hadronic multi-body final state. This analysis will take advantage of the full data sample of Run I and Run II recorded by LHCb. I would also like to explore the possibility of using different four-body final states and combining the results to obtain highest precision to $\gamma$. 
+
+I am exceptionally qualified to perform this analysis to the highest standard. My interest in the subject of flavour physics, my knowledge and experience gained during my Ph.D. thesis as well as my master's and bachelor's degree and my enthusiasm about sophisticated analysis techniques make me an ideal candidate to successfully perform this analysis and to significantly improve the results on $\gamma$.
+\\
+\newline
+I spend a significant part of my Ph.D. on the development of the RICH mirror alignment within the online data taking framework of LHCb for Run II. Thereby I reduced the time the RICH mirror alignment needed to complete from several days to 20 minutes which allows to run the alignment every fill instead of once per year. My work yielded a significant contribution to the automated real-time alignment procedure and to the understanding of the LHCb RICH detectors and was recognised by the collaboration with the \kern-1em {\changefont{pnc}{m}{sc}LHCb Early-Career Scientist Award}.\\
+Fast reconstruction algorithms and automatic alignment and calibration of the detector will be indispensable after the upgrade. This can be illustrated with by looking at decays of charmed hadrons. After the upgrade the hardware trigger stage of LHCb will be removed meaning that the full rate of events will have to be processed by the software trigger. With the increased instantaneous luminosity the rate of charmed hadrons in the LHCb acceptance will be about 6 MHz \cite{connor}. In order to for example distinguish between the topologically identical modes of a Cabibbo suppressed and a Cabibbo favoured decay - where the former is of higher interest but of much smaller branching ratio - the software trigger needs to be able to perform high quality selections including the particle identification variables. This is only possible with a real-time alignment and calibration of the detector.
+With the increased rate of incoming events the software trigger also has to be able to perform a very fast reconstruction.
+I would like to face this challenge and continue contributing to the reconstruction and alignment procedures for the upgrade.
+
+\clearpage
+
+%\clearpage
+
+%\setboolean{inbibliography}{true}
+\bibliographystyle{LHCb}
+%\bibliography{publications}
+\bibliography{vorlage}
+%\addcontentsline{toc}{chapter}{\bibname}
+}
+\end{document}
+
+
+%% end of file `Lebenslauf_Template.tex'.

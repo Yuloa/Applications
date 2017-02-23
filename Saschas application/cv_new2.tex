@@ -1,0 +1,259 @@
+\PassOptionsToPackage{pdfpagelabels=false}{hyperref} 
+\documentclass[12pt,a4paper,sans]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+\renewcommand{\familydefault}{\sfdefault}
+%\nopagenumbers{}
+
+%\newboolean{articletitles}
+%\setboolean{articletitles}{true} % False removes titles in references
+%\newboolean{inbibliography}
+%\setboolean{inbibliography}{false} %True once you enter the bibliography
+%\newboolean{uprightparticles}
+%\setboolean{uprightparticles}{false} %True for upright particle symbols
+%\addcontentsline{toc}{section}{References}
+%\setboolean{inbibliography}{true}
+%% Character encoding
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+%% Adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{amsmath}
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+%\usepackage{cite} % Allows for ranges in citations
+\usepackage{mciteplus}
+\usepackage[numbers]{natbib}
+%\usepackage{hyperref}    % Hyperlinks in references
+%\usepackage[all]{hypcap} % Internal hyperlinks to floats.
+%\usepackage[options]{natbib}
+\newboolean{articletitles}
+\setboolean{articletitles}{true} % False removes titles in references
+
+\newboolean{uprightparticles}
+\setboolean{uprightparticles}{false} %True for upright particle symbols
+
+\newboolean{inbibliography}
+\setboolean{inbibliography}{false} %True once you enter the bibliography
+
+\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+\DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+\DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
+
+%\input{lhcb-symbols-def} % Add in the predefined LHCb symbols
+%% Personal data
+\firstname{Sascha}
+\familyname{Stahl}
+%\title{Resumé title (optional)}
+\address{CERN}{1211 Geneve}
+%\mobile{+1~(234)~567~890}
+%\phone{+2~(345)~678~901}
+%\fax{+3~(456)~789~012}
+%\email{john@doe.org}
+%\homepage{www.johndoe.com}
+%\extrainfo{additional information}
+%\photo[64pt][0.4pt]{picture}
+%\quote{Some quote (optional)}
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+\section{Personal}
+\cventry{Birth}{25th February 1985}{Bad Kreuznach, Germany}{}{}{}
+\cventry{Nationality}{German}{}{}{}{}
+\section{Employment history}
+\cventry{11/2014--}{Marie Curie COFUND CERN fellow}{CERN}{}{}{}
+\subsection{Responsibilities}
+\cventry{01/2016--}{Convener of the subgroup ``CPV, mixing and $b$-hadron properties'' within the Semileptonic working group of LHCb}{the Semileptonic working group at LHCb studies $b$-hadron decays with one lepton in the final state}{}{}{}
+\cventry{04/2016--}{Deputy project leader of the LHCb Software trigger project}{the LHCb software trigger is a vital part of the LHCb data acquisition and has continuously extended the physics reach of LHCb}{}{}{}
+\cventry{11/2014--04/2016}{Responsible for the reconstruction of the LHCb software trigger}{during which time I tuned and commissioned the software trigger reconstruction to be equivalent to the offline-quality reconstruction for the first time.}{}{}{}
+
+\subsection{Awards}
+\cventry{09/2016}{LHCb Early Career Scientist award}{``For having implemented and commissioned the revolutionary changes to the LHC Run-2 high-level-trigger (HLT), including the first widespread deployment of real-time analysis techniques in High Energy Physics. ...''}
+{\href{http://lhcb.web.cern.ch/lhcb/Collaboration_prizes/Early_career_awards.html}{LHCb Collaboration prizes}}{}{}  % arguments 3 to 6 can be left empty
+\section{Studies and PhD}
+\cventry{09/2010-- 07/2014}{PhD in physics}{Ruprecht-Karls Universität Heidelberg}{Heidelberg}{grade: summa cum laude (with highest distinction)}{}  % arguments 3 to 6 can be left empty
+\cventry{07/2014}{PhD thesis}{}{}{under the supervision of Prof. Dr. Stephanie Hansmann-Menzemer in the LHCb group of the Physikalisches Institut
+in Heidelberg}{Title: ``Measurement of $C\!P$ asymmetry in muon-tagged $D^0 \rightarrow K^-K^+$ and $D^0 \rightarrow \pi^- \pi^+$ decays at LHCb''.}  
+\cventry{04/2005--06/2010}{Diploma in physics}{Ruprecht-Karls Universität Heidelberg}{Heidelberg, Germany}{Grade: sehr gut (very good)}{}  % arguments 3 to 6 can be left empty
+\cventry{05/2010}{Diploma thesis}{}{}{under the supervision of Prof. Dr. Stephanie Hansmann-Menzemer in the LHCb group of the Physikalisches Institut
+in Heidelberg}{Title: ``Reconstruction of displaced tracks and measurement of $K_s$ production rate in 
+    proton-proton collisions at $\sqrt{s}=900~\text{GeV}$ at the LHCb experiment''.}  
+
+\section{Talks}
+\cventry{07/2015}{EPS-HEP 2015}{Vienna, Austria}{``The LHCb Higher Level Trigger in Run II''}{}{}  % arguments 3 to 6 can be left empty
+\cventry{01/2015}{Particle Physics Seminar}{Bonn, Germany}{``Measurements of $C\!P$ asymmetries in charm decays at LHCb''}{}{}  % arguments 3 to 6 can be left empty
+\cventry{11/2014}{Graduation ceremony}{Selected speaker by the Combined faculties for the Natural Sciences and Mathematics of the Heidelberg University}{``Teilchen und Antiteilchen, warum und wie messe ich den Unterschied?''}{}{}  % arguments 3 to 6 can be left empty
+\cventry{03/2013}{Rencontres de Moriond QCD 2013}{}{``Properties of b and c hadrons at LHCb''}{}{}  % arguments 3 to 6 can be left empty
+\cventry{03/2010}{Rencontres de Moriond EW 2010}{Talk in the Young Scientists Forum}{``Tracking performance in V0 reconstruction with first data at LHCb''}{}{}  % arguments 3 to 6 can be left empty
+
+\subsection{Scholarships}
+\cventry{09/2010-- 02/2013}{International Max Planck Research School for Precision Tests of Fundamental Symmetries in Particle Physics, 
+  Nuclear Physics, Atomic Physics and Astroparticle Physics at the University of Heidelberg}
+{Max-Planck--Institut für Kernphysik}{Heidelberg}{}{}  % arguments 3 to 6 can be left empty
+
+\section{Teaching and Supervision}
+During my undergraduate and graduate studies I tutored courses in experimental and theoretical physics.\\
+I have supervised 3 bachelor and summer students, 1 master student and closely followed 2 PhD students
+working on a variety of topics. \\
+In my role as HLT deputy project leader I coordinate the work of a core team of around 5 post-docs. 
+%\cventry{11/2015-- 07/2016}{Supervision of Guillaume Falmagne visiting student from ENS Cachan} {``Measurement of $\Lambda_b$ production asymmetry in pp collisions''}{}{}{}{}
+%\cventry{04/2015-- 04/2016}{Supervision of Marian Stahl PhD student from Heidelberg University} {``Forward Tracking Improvements for Run2 Data Taking''}{}{}{}{}
+%\cventry{07/2015-- 09/2015}{Supervision of Renata Kopecna within the CERN Summer student programme} {``Two-particle correlations in pp collisions''\cite{Kopecna:2051967}}{}{}{}
+%\cventry{2012-- 2014}{Following Andreas Jäger, PhD student} {``Measurement of indirect $CP$ asymmetries in $D^0\rightarrow K^-K^+$ and $D^0\rightarrow \pi^-\pi^+$ decays using semileptonic $B$ decays''\cite{Aaij:2015yda}}{}{}{}
+%\cventry{2010-- 2014}{Supervision of Bachelor and Summer Students}{}{}{}{}
+%\cventry{09/2013-- 02/2014}{Tutor for master course}{Experimental Particle Physics}{}{}{}  % arguments 3 to 6 can be left empty
+%\cventry{2008-2011}{Tutor for undergraduate courses}{Theoretical Mechanics, Theoretical Electrodynamics and Theoretical Quantum Dynamics}{}{}{}  % arguments 3 to 6 can be left empty
+
+
+\newpage
+
+\section{Research activities}
+I started my career in high energy physics as a master student in 2009 at a very exciting time
+when the LHCb experiment was about to start taking data. 
+During my masters thesis I improved a pattern recognition algorithm dedicated to the 
+reconstruction of very displaced tracks. I used the algorithm to reconstruct 
+the first $K_S^0$ signals and was among the main authors of the first LHCb publication~\cite{LHCb-PAPER-2010-001}.
+My contribution was rewarded by the collaboration with a talk in the Young Scientists Forum at Rencontres de Moriond EW in 2010.  
+I also contributed to the first LHCb measurement of prompt charm production at $\sqrt{s}=7\;$TeV in the forward region~\cite{LHCb-PAPER-2012-041},
+being responsible for the evaluation of detection efficiencies and data-simulation discrepancies.
+These were particularly important since a cross-section measurement requires the knowledge of 
+absolute, not relative, efficiencies.
+
+I started my PhD in September 2010. The first $B$-physics analyses 
+were the measurements of $B$-meson mixing and $C\!P$ violation in mixing. 
+Together with one post-doc and two other PhD students from the Heidelberg group,
+we measured the mixing frequencies $\Delta m_d$ and $\Delta m_s$, 
+the latter with the highest precision at this time~\cite{LHCb-PAPER-2013-006}. Afterwards, I contributed to the measurement 
+of the mixing phase $\phi_s$. I studied the decay-time acceptance and the decay-time resolution 
+which were crucial inputs to the multi-dimensional fit in the decay-time and angular observables~\cite{LHCb-PAPER-2011-021}. 
+
+To work full speed on my thesis topic I moved to CERN in 2012.
+In November 2011 the LHCb experiment had reported evidence of direct $C\!P$ violation in the decay of
+charm mesons in the modes $D^0 \rightarrow K^-K^+$ and $D^0 \rightarrow \pi^-\pi^+$. This came as 
+a surprise as it deviated from the Standard Model predictions.
+Together with two colleagues we came up with the novel idea to cross-check the result on an independent 
+data sample, namely exploiting $D$~mesons from semileptonic $B$~decays.
+I~developed independent measurements for detection and 
+reconstruction asymmetries which was the main challenge of the $C\!P$ asymmetry measurement.  
+The analysis, which did not confirm the original signal, was followed with a 
+lot of interest by the collaboration and was one of the most scrutinized LHCb analyses.
+I was the contact person for the internal review process
+and the analysis was published in~\cite{LHCb-PAPER-2013-003,LHCb-PAPER-2014-013}.
+In parallel to my analysis activities I joined the High Level Trigger team and was one of the core 
+people charged with ensuring the smooth running of the trigger at the restart of the data taking in spring 2012. 
+I profited from my background in track reconstruction, tuning reconstruction and track quality 
+criteria in order to optimize the efficiency of physics signals given the computing requirements.
+
+In 2013 the preparation of the LHCb upgrade entered an important phase.
+I was asked to contribute to a task force to setup the reconstruction sequence in the simulation. 
+My work was crucial to make the first fundamental design choices for the novel tracking detectors.
+
+I graduated in June 2014 with distinction. I had the pleasure to be selected to give the presentation 
+at the graduation ceremony for all natural sciences.
+
+I started my 3 year post-doc position as COFUND CERN-fellow in fall 2014,  
+at the end of the first long shutdown of the LHC in which the LHCb experiment underwent a paradigm shift. 
+The detector became the first ever High Energy Physics detector to be aligned, calibrated, 
+and fully reconstructed in real-time. Within this novel system, the software trigger decides not only which
+events are kept, but also which part of the event information is stored to save bandwidth to offline storage~\cite{LHCb-DP-2016-001}. 
+The development of this system was crucial ingredient not only for the Run 2 LHCb physics programme,
+but also as a proof-of-principle for the full software trigger of the upgraded LHCb experiment in Run 3. 
+
+My personal role was to develop, configure and commission an online reconstruction
+which matches the performance of the previous offline reconstruction. I studied the feasibility 
+of the entire concept and led the efforts to convince the LHCb collaboration
+of the merits of the approach. This included not only the tracking reconstruction
+but also the calorimeter, muon, and Cherenkov detector reconstructions. As part of this work, together with a PhD student,
+I deployed a deep neural network to improve the rejection of fake combinations in the pattern recognition,
+improving efficiency, fake rate, and timing at the same time.
+This is the first application of a deep neural network in the charged particle reconstruction of any LHC experiment. 
+I also helped optimize many specific trigger selections such that they exploit the potential of the new reconstruction,
+which is crucial in an era where specific particle decays have to 
+be triggered and fully selected in real-time. 
+
+Since 2016 I am deputy project leader of the LHCb software trigger, 
+responsible for leading an enthusiastic team of several PhD students and post-docs.
+My team is primarily in charge of consolidating and developing the Run 2 trigger,
+which involves continuously monitoring the trigger performance, validating new trigger
+lines when they are added, and continuing to optimize and speed up the reconstruction.
+Because of the scale of the problem, involving hundreds of trigger lines which must
+operate in parallel without interfering with each other, it is critical to automate
+as much as possible the process of designing and testing trigger lines and the reconstruction.
+I am particularly focused on this, but I have also continued to make contributions to the 
+optimization of the LHCb upgrade reconstruction and the preparations for Run 3, in particular
+in the development and testing of the charged particle reconstruction.
+
+I am currently pursuing several analyses, with the objective both of extending our knowledge of fundamental
+parameters of the Standard Model and searching for New Physics, and of broadening my own knowledge of physics.
+This work has also allowed me to gain experience in supervising students, which I greatly enjoy.
+During the restart of the LHC in 2015 at the new centre-of-mass energy I initiated 
+the analysis of two-particle correlations produced in proton-proton collisions, 
+a topic studied by all experiments at the LHC, giving insight to the mechanisms of hadronization
+and collective effects in a dense environment. This summer student project quickly showed 
+promising results \cite{Kopecna:2051967}, and the analysis should be published in the coming months.
+I am also supervising a masters student in measuring the production asymmetry of $\Lambda_b$ baryons,
+which will let us better understand the dynamics of heavy-quark production in 
+proton-proton collisions. Again the analysis is mature and approaching publication.
+
+In parallel, and complementary to my previous work on direct $C\!P$-violation measurements
+in the charm system, I am collaborating on measuring the charm-mixing and $C\!P$-violation parameters 
+with the so-called golden mode $D^0 \rightarrow K_S^0 \pi^+\pi^-$, which is unique in giving direct access to both the
+charm mixing parameters (width- and mass-splitting) and the parameters of possible $C\!P$-violation in charm mixing ($|q/p|$ and the 
+weak phase $\phi$). The efficiency
+to trigger and reconstruct this channel more than doubled due to my work on improving the software trigger.
+A crucial difficulty of performing a precise measurement is the knowledge of the Dalitz distribution of the three-body final state,
+because it is exactly the interference of the different resonant decay amplitudes which allows the mixing and $C\!P$-violating
+observables to be measured. Traditionally this required the modelling of the different resonant contributions, 
+which is hard not simply because you have to invent a model which fits the data, but also because of the computational cost of fitting such a multi-dimensional
+model to tens of millions of signal events.
+Together with a team of postdocs I am currently implementing a novel analysis procedure which allows the measurement to be performed in a model-independent
+way, greatly reducing both systematic uncertainties and the computational cost of the measurement.
+
+Finally, I am currently convening one of the subgroups of the top-level Semileptonic working group of LHCb.
+As convener, I am responsible for following all analyses carried out within the working group (4 in the last twelve months),
+reviewing the internal analysis documentation, and deciding when it is mature enough 
+to proceed to the next stage of collaboration review. 
+I am particularly focused on using my expertise in the measurement 
+of detector efficiencies and asymmetries
+to improve the sensitivity of all the physics measurements performed within my group. 
+Many individual analyses have developed tools to measure such efficiencies and asymmetries,
+and in common with my work on the trigger I am guiding them to make these tools usable by the whole collaboration,
+by combining their best features, developing automatic tests and documentation, and making sure that new students
+and analysts are aware of these tools and use them.
+%One of my goals as a working group convener is to make the tools
+%developed by several analyses to measure detection asymmetries more accessible
+%and extend their use by colleagues. 
+
+\vspace{2.5cm} 
+Geneva, \today
+
+\include{research_proposal3}
+
+\include{list_publications}
+%\newpage
+%
+%\section{Publications with significant personal contributions}
+%\cventry{04/2016}{Tesla: an application for real-time data analysis in High Energy Physics}{\href{https://arxiv.org/abs/1604.05596}{arXiv:1604.05596}}{}{}{}
+%\cventry{07/2014}{Measurement of $C\!P$ asymmetry in $D^0 \rightarrow K^-K^+$ and $D^0 \rightarrow \pi^- \pi^+$ decays}{\href{http://dx.doi.org/10.1007/JHEP07(2014)041}{DOI: 10.1007/JHEP07(2014)041} }{}{}{}
+%\cventry{03/2013}{Search for direct $C\!P$ violation in $D^0 \rightarrow h^-h^+$ modes using semileptonic $B$ decays}{\href{http://dx.doi.org/10.1016/j.physletb.2013.04.061}{DOI: 10.1016/j.physletb.2013.04.061}}{}{}{}
+%\cventry{02/2013}{Prompt charm production in $pp$ collisions at $\sqrt{s}$ = 7 TeV}{\href{http://dx.doi.org/10.1016/j.nuclphysb.2013.02.010}{DOI: 10.1016/j.nuclphysb.2013.02.010}}{}{}{}
+%\cventry{12/2011}{Measurement of the $C\!P$-violating phase $\phi_s$ in the decay $B^{0}_s \rightarrow J/\psi \phi$}{\href{http://dx.doi.org/10.1103/PhysRevLett.108.101803}{DOI: 10.1103/PhysRevLett.108.101803}}{}{}{}
+%\cventry{12/2011}{Measurement of the $B^0_s-\overline{B}^0_s$ oscillation frequency $\Delta m_s$ in $B^0_s \rightarrow D^-_s (3)\pi$ decays}{\href{http://dx.doi.org/10.1016/j.physletb.2012.02.031}{DOI:10.1016/j.physletb.2012.02.031}}{}{}{}
+%\cventry{09/2010}{Prompt $K_{S}^{0}$ production in $pp$ collisions at $\sqrt{s}$ = 0.9 TeV}{\href{http://dx.doi.org/10.1016/j.physletb.2010.08.055}{DOI: 10.1016/j.physletb.2010.08.055}}{}{}{}
+%
+
+\newpage
+
+%\bibliographystyle{plain}
+%\bibliographystyle{plain}
+\setboolean{inbibliography}{true}
+\bibliographystyle{LHCb}
+%\bibliography{publications}
+\bibliography{LHCb-PAPER,publications,LHCb-DP}
+\end{document}
